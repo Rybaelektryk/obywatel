@@ -2,7 +2,9 @@
 session_start();
 
 $users = array(
-    "okxn" => "okxn123",
+    "ryba" => "rybaelektryk",
+    "olaf" => "olafkan",
+    "kajtek" => "kitkus",
     // Info o autorze itd.
 ); 
 
