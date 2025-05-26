@@ -2,9 +2,8 @@
 session_start();
 
 $users = array(
-    "ryba" => "rybaelektryk",
-    "olaf" => "olafkan",
-    "kajtek" => "kitkus",
+    "User" => "nowehaslo",
+
     // Info o autorze itd.
 ); 
 
