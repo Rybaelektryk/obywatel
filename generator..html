@@ -136,15 +136,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <input type="text" id="birthdate" name="birthdate" placeholder ="01.01.2000" required><br><br>
             <label for="pesel">PESEL:</label>
             <input type="text" id="pesel" name="pesel" placeholder="05210169617" required maxlength="11"><br><br>
+    <div class="input_holder">
+        <div class="input-wrapper">
             <input type="text" id="image" class="input" placeholder="">
+            <img src="assets/images/unnamed.png" class="upload-icon" onclick="document.getElementById('file-upload').click()">
+        </div>
+        <span class="placeholder">Link do zdjęcia (imgur)</span>
+        <p class="error">To pole jest wymagane</p>
         <input type="file" id="file-upload" accept="image/*" style="display: none">
+    </div>
 
-
-
-
-		
-          <label for="plec" class="label-2">Płeć:</label><br>
-          <select id="plec" name="plec" required>
+    <div class="image-preview-modal">
+        <div class="image-preview-content">
+            <button class="close-preview">×</button>
+            <img class="preview-image" src="" alt="Podgląd">
+        </div>
+    </div>
+	    <label for="plec" class="label-2">Płeć:</label><br>
+            <select id="plec" name="plec" required>
             <option value="">Wybierz...</option>
             <option value="Mężczyzna">Mężczyzna</option>
             <option value="Kobieta">Kobieta</option>
